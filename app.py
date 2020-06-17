@@ -78,11 +78,10 @@ def update_output_graph(n_clicks):
         ))
 
 
-@app.callback([Output('input-1-state', 'value'),
-               Output('output-state', 'children')],
+@app.callback(Output('input-1-state', 'value'),
               [Input('reset_button', 'n_clicks')])
 def update(reset):
-    return 0, 0
+    return 0
 
 
 def get_today_date_string():
